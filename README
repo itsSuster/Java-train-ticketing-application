@@ -1,0 +1,41 @@
+The project was implemented using Object-Oriented Programming principles in Java.
+This project is about a Java console program that lets you have a train ticket booking system.
+
+In this app we can:
+-book train tickets
+-search train routes
+-find direct or indirect train connections
+-manage trains and routes as an administrator
+-send booking confirmation emails
+-send train delay notifications
+
+Features of this application:
+-each train has a limited number of seats
+-booking is accepted only if there are enough seats available
+-failed bookings display an error message
+-confirmation emails are shown in the console
+-verifies departure and arrival stations
+-checks train schedules
+-validates changeover times
+
+The administrator of the train station can:
+-add train routes
+-remove train routes
+-modify train routes
+-add trains
+-remove trains
+-modify trains
+-view all bookings for a train
+-mark trains as delayed
+-notify passengers about delays
+
+In Main:
+Train stations are made: Brasov, Sinaia, Ploiesti, Bucuresti, Constanta, Cluj.
+An additional Timisoara–Cluj route is later added by the administrator.
+Several trains are created with predefined schedules and capacities.
+The booking functionality is tested using multiple passengers. Marian Cosmin books 2 tickets
+and George Paladi books 3 tickets. Another passenger, Marius Moga, attempts to
+reserve 200 tickets, but there are only 95 seats available, so an error will occur.
+Administrator functionalities are also tested. The administrator displays bookings for a train,
+marks a train as delayed by 30 minutes, sends delay notification emails to passengers,
+and demonstrates adding and removing routes and trains.

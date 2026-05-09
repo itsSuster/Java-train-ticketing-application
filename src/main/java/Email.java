@@ -13,4 +13,16 @@ public class Email {
         System.out.println("Thank you!");
         System.out.println();
     }
+
+    public void sendDelayEmail(Booking booking, int delayMinutes) {
+        System.out.println();
+        System.out.println("Sending delay email...");
+        System.out.println("To: " + booking.getCustomerEmail());
+        System.out.println("Subject: Train delay notification");
+        System.out.println("Hello " + booking.getCustomerName() + ",");
+        System.out.println("Your train " + booking.getTrain().getTrainName()
+                + " has a delay of " + delayMinutes + " minutes.");
+        System.out.println();
+    }
+
 }
